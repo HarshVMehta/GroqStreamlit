@@ -2,8 +2,8 @@ import streamlit as st
 from typing import Generator
 from groq import Groq
 
-st.set_page_config(page_icon="💬", layout="wide",
-                   page_title="Groq Goes Brrrrrrrr...")
+st.set_page_config(page_icon="😱", layout="wide",
+                   page_title="Groq API")
 
 
 def icon(emoji: str):
@@ -14,9 +14,9 @@ def icon(emoji: str):
     )
 
 
-icon("🏎️")
+icon("✈️🌍")
 
-st.subheader("Groq Chat Streamlit App", divider="rainbow", anchor=False)
+st.subheader("MY CHAT BOT", divider="rainbow", anchor=False)
 
 client = Groq(
     api_key=st.secrets["GROQ_API_KEY"],
